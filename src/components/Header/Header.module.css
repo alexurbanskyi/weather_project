@@ -1,0 +1,35 @@
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   background-color: rgb(128, 187, 250);
+   padding: 10px 0;
+}
+.logo{
+   display: flex;
+   text-align: center;
+   align-items: center;
+}
+.logo-img{
+   width: 100px;
+}
+.title{
+   font-size: 30px;
+}
+.nav-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   list-style: none;
+}
+.link{
+   font-size: 30px;
+   font-weight: 800;
+   padding: 8px;
+   border-radius: 10px;
+   text-decoration: none;
+   color: black;
+}
+.link:active{
+   color: inherit;
+}

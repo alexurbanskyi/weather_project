@@ -1,0 +1,32 @@
+.city-card{
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   max-width: 200px;
+   background-color: rgb(128 187 250);
+   margin: 5px;
+  
+}
+.city-name{
+   font-size: 20px;
+   font-weight: 800;
+   width: 20%;
+}
+.temp-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.temp span{
+   font-size: 35px;
+}
+.description{
+   font-weight: 800;
+   font-size: 10px;
+}
+.feels-like{
+   font-size: 12px;
+}
+.feels-like span{
+ font-size: 25px;
+}

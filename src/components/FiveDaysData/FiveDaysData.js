@@ -1,0 +1,18 @@
+import { useEffect } from "react";
+
+function ManyDaysData(cityId, SetManyDaysData){
+ 
+   useEffect(() => {
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&appid=1626dd61d3c09e3b285d1fb480246f3a&lang=ru`)
+      .then(response => response.json())
+      .then(json =>{ 
+         let data = {
+            arr: json.list,
+            name: json.city.name
+         }
+         SetManyDaysData(data)
+      }
+   )},[cityId])
+
+}
+export default ManyDaysData;

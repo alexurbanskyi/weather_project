@@ -1,0 +1,49 @@
+.forecast-wrapper{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.card-wrapper{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-around;
+   text-align: center;
+   margin: 10px 0;
+
+}
+.card{
+   border: 1px solid black;
+   border-radius: 10px;
+   padding: 10px;
+   margin: 5px;
+   width: 140px;
+   background-color: rgb(128, 187, 250);
+}
+.forecast-title{
+   text-align: center;
+   font-size: 25px;
+   padding:  0 0 10px 0;
+}
+.forecast-date{
+   font-weight: 800;
+}
+.forecast-time{
+   font-size: 12px;
+}
+.city-name{
+   font-size: 30px;
+   font-weight: 800;
+   padding: 15px;
+}
+.temp-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.temp span{
+   font-size: 30px;
+}
+.icon{
+   width: 60px;
+}

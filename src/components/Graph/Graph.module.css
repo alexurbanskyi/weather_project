@@ -1,0 +1,18 @@
+.graph{
+   max-width: 1200px;
+   margin: 0 auto;
+}
+.graph-wrapper{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: space-between;
+}
+
+
+.chart-container{
+   position: relative; 
+   height:30vh; 
+   width:60vw;
+   margin: 0 auto;
+}
