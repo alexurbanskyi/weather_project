@@ -1,0 +1,33 @@
+.my-win-ext{
+   box-sizing: border-box;
+   width: 40px;
+   height: 40px;
+   border: 10px solid rgb(6, 181, 250);
+   border-radius: 50%;
+   border-bottom-color: transparent;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   animation: my-win-ext 1s infinite;
+ }
+ 
+ .my-win-int{
+   box-sizing: border-box;
+   width: 40px;
+   height: 40px;
+   border: 10px solid rgb(35, 92, 250);
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+ }
+ 
+ @keyframes my-win-ext{
+   from{
+ transform: rotate(0deg);
+   }
+   to{
+ transform: rotate(360deg);
+   }
+ }
+ 

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import s from './BigCityWeather.module.css'
 import ChangeColor from '../../utilits/ChangeColor'
+import Loader from '../Loader/Loader'
 
 function BigCityWeather({id, SetCityId}){
    let [bigCityData, SetBigCityData] = useState({})
    
      useEffect(() => {
-       fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&units=metric&appid=1626dd61d3c09e3b285d1fb480246f3a&lang=ru`)
+       fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&units=metric&appid=191434b87648073ccd31963c4dc456d1&lang=ru`)
        .then(response => response.json())
        .then(json =>{
          
@@ -22,9 +23,10 @@ function BigCityWeather({id, SetCityId}){
          })
     },[id])
     
-    if (Object.keys(bigCityData).length === 0 ) return  (<p>LOOOOOOAD!!!!</p>)
+    if (Object.keys(bigCityData).length === 0 ) return <Loader/> 
 
      return(
+       
        <div onClick={() => SetCityId(id)} className={s['city-card']}>
           <p className={s['city-name']}>{bigCityData.cityName}</p>
           <div className={s['temp-wrapper']}>
@@ -34,6 +36,7 @@ function BigCityWeather({id, SetCityId}){
           <p className={s.description}>{bigCityData.description}</p>
          <p className={s['feels-like']}>Ощущаеться как <span style={{color: ChangeColor(bigCityData.feels_like) }}>{bigCityData.feels_like}</span> &deg;C</p>
       </div>
+     
      );
    }
    export default BigCityWeather

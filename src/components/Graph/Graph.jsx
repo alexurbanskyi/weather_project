@@ -10,11 +10,12 @@ import {
    Legend,
  } from 'chart.js';
  import { Bar } from 'react-chartjs-2';
+import Loader from "../Loader/Loader";
 
 
 
 function Graph({ fiveDaysData }){
-  if (Object.keys(fiveDaysData).length === 0 ) return  (<p>LOOOOOOAD!!!!</p>)
+  if (Object.keys(fiveDaysData).length === 0 ) return  (<Loader/>)
   console.log(fiveDaysData)
    
   let tempArr = []; 
@@ -132,7 +133,7 @@ function Graph({ fiveDaysData }){
     };
    return(
       <div className={s.graph} >
-        <p>{fiveDaysData.name}</p>
+        <p className={s['city-name']}>{fiveDaysData.name}</p>
 
       <div className={s["chart-container"]} >
         <Bar className={s.qqq} options={optionsTemp} data={dataTemp} />

@@ -1,0 +1,17 @@
+.slick-arrow::before {
+   color: rgb(128, 187, 250);
+}
+/* .slick-next{
+  background-color: black;
+} 
+ */
+
+
+.slider-wrapper{
+  max-width: 1150px;
+   margin: 0 auto;
+   padding: 30px 0;
+}
+.slider-carddd{
+  margin: 0 auto;
+}

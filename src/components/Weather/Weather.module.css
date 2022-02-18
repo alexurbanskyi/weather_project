@@ -1,0 +1,51 @@
+.curreny-weather{
+   max-width: 1200px;
+   margin: 0 auto;
+   
+}
+.city-name{
+   font-size: 30px;
+   font-weight: 800;
+   padding: 15px;
+}
+.current-wrapper{
+   background-color: rgb(128, 187, 250);
+   padding: 20px;
+}
+.descript-wraper{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.descript{
+   font-size: 20px;
+   font-weight: 600;
+   text-align: center;
+}
+.temp-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.head-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.icon{
+  width: 160px;
+}
+.temp{
+   font-size: 40px;
+}
+.temp span{
+   font-size: 100px;
+}
+.temp-logo{
+   width: 70px;
+}
+.feels{
+   text-align: center;
+}

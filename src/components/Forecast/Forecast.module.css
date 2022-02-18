@@ -21,6 +21,7 @@
 }
 .forecast-title{
    text-align: center;
+   font-weight: 600;
    font-size: 25px;
    padding:  0 0 10px 0;
 }

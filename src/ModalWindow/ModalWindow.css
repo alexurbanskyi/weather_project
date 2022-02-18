@@ -1,0 +1,27 @@
+/* .modal{
+   color: rgb(255, 255, 255);
+   display: none;
+ }
+ .active{
+   display: block;
+   height: 100vh;
+   background-color: gray;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+     
+ }
+  */
+  .modal-show{
+     display: block;
+     background-color: rgba(149, 167, 225, 0.64);
+     position: absolute;
+     height: 100vh;
+     top: 0;
+     left: 0;
+     width: 100%;
+  }
+  .modal-close{
+     display: none;
+  }

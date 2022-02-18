@@ -11,26 +11,25 @@ import FiveDaysData from './components/FiveDaysData/FiveDaysData'
 
 
 
+
 function App() {
    let [cityId, SetCityId] = useState(689558);
-   let [weatherData, SetWeatherData] = useState({});
+  //  let [weatherData, SetWeatherData] = useState({});
    let [fiveDaysData, SetFiveDaysData] = useState({});
-
-  FiveDaysData(cityId, SetFiveDaysData);
-   
  
-    return (
+  FiveDaysData(cityId, SetFiveDaysData);
+     return (
     <div className="App">
-
+      
+      
       <Routes>
-          <Route path="/" element={<Main/>}>  
+          <Route path="/" element={<Main />}>  
                     
-            <Route index element={<City weatherData={weatherData} SetWeatherData={SetWeatherData} cityId={cityId} SetCityId={SetCityId}/>}/>
-            <Route path='/weather'  element={<Weather weatherData={weatherData} SetWeatherData={SetWeatherData} cityId={cityId} SetCityId={SetCityId}/>}/>
-            <Route path='/forecast'  element={<Forecast fiveDaysData={fiveDaysData}/>}/>
+            <Route index element={<City  cityId={cityId} SetCityId={SetCityId} />}/>
+            <Route path='/weather'  element={<Weather cityId={cityId} SetCityId={SetCityId}/>}/>
+            <Route path='/forecast'  element={<Forecast fiveDaysData={fiveDaysData }/>}/>
             <Route path='/graph'  element={<Graph fiveDaysData={fiveDaysData}/>}/>
-
-          
+            
           </Route>
       </Routes>
  

@@ -1,5 +1,5 @@
 
-const SityList = [ 
+const cityList = [ 
     {
         value: 710735,
         label: "Чернигов",
@@ -47,4 +47,4 @@ const SityList = [
 
   
 ]
- export default SityList; 
+ export default cityList; 

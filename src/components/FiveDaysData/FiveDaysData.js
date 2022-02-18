@@ -3,7 +3,7 @@ import { useEffect } from "react";
 function ManyDaysData(cityId, SetManyDaysData){
  
    useEffect(() => {
-      fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&appid=1626dd61d3c09e3b285d1fb480246f3a&lang=ru`)
+      fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${cityId}&units=metric&appid=191434b87648073ccd31963c4dc456d1&lang=ru`)
       .then(response => response.json())
       .then(json =>{ 
          let data = {

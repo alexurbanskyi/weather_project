@@ -1,9 +1,10 @@
 import React from 'react'
 import s from './Forecast.module.css'
 import ChangeColor from '../../utilits/ChangeColor'
+import Loader from '../Loader/Loader'
 
 function Forecast({fiveDaysData}) {
- if (Object.keys(fiveDaysData).length === 0 ) return  (<p>LOOOOOOAD!!!!</p>)
+ if (Object.keys(fiveDaysData).length === 0 ) return  <Loader/>
   console.log(fiveDaysData)
  let arrData = fiveDaysData.arr
  console.log(arrData)

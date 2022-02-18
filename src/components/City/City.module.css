@@ -1,12 +1,24 @@
 .city-wrapper{
  max-width: 1150px;
  margin: 0 auto;
+
  
 }
-.select{
-   max-width: 500px;
+.select-city{
+  max-width: 600px;
+  width: 100%;
+  font-weight: 800;
    text-align: center;
-   margin: 0 auto;
+   padding: 0 10px;
+   
+}
+.select-country{
+   max-width: 250px;
+   text-align: start;
+   font-size: 13px;
+   font-weight: 800;
+   
+   
 }
 .card-wrapper{
    display: flex;
@@ -22,4 +34,16 @@
 a{
    text-decoration: none;
    color: inherit;
+}
+.country-wrapper{
+   display: flex;
+   justify-content: end;
+   
+}
+.city-wrapper{
+   padding: 50px 0;
+}
+.select-wrapper{
+   display: flex;
+   justify-content: center;
 }

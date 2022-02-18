@@ -4,13 +4,14 @@
    padding: 10px;
    max-width: 200px;
    background-color: rgb(128 187 250);
-   margin: 5px;
+   margin: 0 auto;
+   text-align: center;
   
 }
 .city-name{
    font-size: 20px;
    font-weight: 800;
-   width: 20%;
+   text-align: center;
 }
 .temp-wrapper{
    display: flex;
