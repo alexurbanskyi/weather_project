@@ -8,9 +8,18 @@
    font-weight: 800;
    padding: 15px;
 }
+.container{
+   display: flex;
+   justify-content: center;
+}
 .current-wrapper{
+   margin: 0 10px 0 10px;
+   max-width: 700px;
    background-color: rgb(128, 187, 250);
    padding: 20px;
+   border-radius: 20px;
+   width: 100%;
+   
 }
 .descript-wraper{
    display: flex;
@@ -48,4 +57,71 @@
 }
 .feels{
    text-align: center;
+   font-size: 25px;
+   font-weight: 700;
+}.feels span{
+   font-size: 40px;
+}
+.down{
+   transform: rotate(180deg);
+}
+.min-max-wrapper{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.min-max-temp span{
+   font-size: 30px;
+   font-weight: 700;
+}
+.min-max-block{
+   padding: 15px 20px;
+}
+.param-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   max-width: 300px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   padding: 10px;
+}
+.param-wrapper span{
+   font-size: 30px;
+   font-weight: 700;
+   padding-left: 5px;
+}
+.wind-deg{
+   /* background-color: rgb(190, 229, 250); */
+   width: 45px;
+   height: 45px;
+   border-radius: 50%;
+   border: 3px solid black;
+   position: relative;
+}
+.wind-arrow{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+}
+.north{
+   font-size: 12px;
+   color: blue;
+   font-weight: 700;
+}
+.south{
+   font-size: 12px;
+   color: red;
+   font-weight: 700;
+}
+.humidity{
+   text-align: center;
+   padding-top: 10px;
+
+}
+.humidity span{
+   font-size: 30px;
+   font-weight: 700;
 }

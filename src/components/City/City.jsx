@@ -70,15 +70,14 @@ const colourStyles= {
 
       {/* поиск по странам    */}
       <div className={s['country-wrapper']}>
-      <Select  styles={colourStyles} className={s['select-country']} placeholder={'Украина'} options={optionsCountry} onChange={(e) => {
-        SetCountry(e.value)
-        console.log(e.value)
-        } }/>
+        <Select  styles={colourStyles} className={s['select-country']} placeholder={'Украина'} options={optionsCountry} onChange={(e) => {
+          SetCountry(e.value)
+          console.log(e.value)
+          } }/>
       </div>
 
    <CitySlider searchCountry={searchCountry} SetCityId={SetCityId} />  
 
-<div className='stt'>fdfdfsd</div>
 
  {/* Блок вывода карточек больших городов */}
       {/* <div className={s['card-wrapper']}> 
@@ -90,7 +89,7 @@ const colourStyles= {
           <Select className={s['select-city']} placeholder={'Введите название города'} options={optionsCity} onChange={(e) => {SetCityId(e.value)
           console.log(e)
           } }/>
-          <Link to={'/weather'}><FcSearch size={'3rem'} onClick={()=>console.log('ICON')}/></Link>
+          <Link className={s['search-icon']} to={'/weather'}><FcSearch size={'3rem'}/></Link>
         </div>
       </div>
     </div>

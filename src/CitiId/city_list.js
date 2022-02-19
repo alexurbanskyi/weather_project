@@ -1,24 +1,24 @@
 const UkraineCity = [
-    // {
-    //     "id": 686967,
-    //     "name": "Житомир",
-    //     "country": "UA"
-    // },
-    // {
-    //     "id": 687700,
-    //     "name": "Запорожье",
-    //     "country": "UA"
-    // },
-    // {
-    //     "id": 689558,
-    //     "name": "Винница",
-    //     "country": "UA"
-    // },
-    // {
-    //     "id": 692194,
-    //     "name": "Сумы",
-    //     "country": "UA"
-    // },
+    {
+        "id": 686967,
+        "name": "Житомир",
+        "country": "UA"
+    },
+    {
+        "id": 687700,
+        "name": "Запорожье",
+        "country": "UA"
+    },
+    {
+        "id": 689558,
+        "name": "Винница",
+        "country": "UA"
+    },
+    {
+        "id": 692194,
+        "name": "Сумы",
+        "country": "UA"
+    },
     {
         "id": 694423,
         "name": "Севастополь",
@@ -34,16 +34,16 @@ const UkraineCity = [
         "name": "Villegouge",
         "country": "FR",
     },
-    // {
-    //     "id": 3021486,
-    //     "name": "Deville",
-    //     "country": "FR",
-    // },
-    // {
-    //     "id": 3021435,
-    //     "name": "Die",
-    //     "country": "FR",
-    // },
+    {
+        "id": 3021486,
+        "name": "Deville",
+        "country": "FR",
+    },
+    {
+        "id": 3021435,
+        "name": "Die",
+        "country": "FR",
+    },
     // {
     //     "id": 3011460,
     //     "name": "Killem",

@@ -29,11 +29,13 @@ function BigCityWeather({id, SetCityId}){
        
        <div onClick={() => SetCityId(id)} className={s['city-card']}>
           <p className={s['city-name']}>{bigCityData.cityName}</p>
+          
           <div className={s['temp-wrapper']}>
             <p className={s.temp}><span style={{color: ChangeColor(bigCityData.temp) }}>{bigCityData.temp}</span> &deg;C</p>
             {<img  src={`https://openweathermap.org/img/wn/${bigCityData.icon}@2x.png`} alt="logo" />}
           </div>
           <p className={s.description}>{bigCityData.description}</p>
+          
          <p className={s['feels-like']}>Ощущаеться как <span style={{color: ChangeColor(bigCityData.feels_like) }}>{bigCityData.feels_like}</span> &deg;C</p>
       </div>
      

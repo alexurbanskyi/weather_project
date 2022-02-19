@@ -1,8 +1,7 @@
 .city-wrapper{
  max-width: 1150px;
  margin: 0 auto;
-
- 
+ padding: 50px 0;
 }
 .select-city{
   max-width: 600px;
@@ -37,13 +36,35 @@ a{
 }
 .country-wrapper{
    display: flex;
-   justify-content: end;
+   justify-content: flex-end;
+   padding-right: 10px;
    
 }
-.city-wrapper{
-   padding: 50px 0;
-}
+
 .select-wrapper{
    display: flex;
    justify-content: center;
 }
+.search-icon{
+   padding-right: 10px;
+}
+
+@media screen and (max-width: 515px) {
+   .country-wrapper{
+      display: flex;
+      justify-content: center;
+      padding-right: 0px;
+      
+   }
+   .city-wrapper{
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 20px 0;
+     }
+     .date{
+      padding: 10px;
+      font-size: 20px;
+      font-weight: 800;
+      text-align: center;
+   }
+ }

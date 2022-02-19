@@ -29,7 +29,7 @@ function Graph({ fiveDaysData }){
    dateArr.push(fiveDaysData.arr[i].dt_txt)
    humidityArr.push(fiveDaysData.arr[i].main.humidity);
    windArr.push(fiveDaysData.arr[i].wind.speed)
-   pressureArr.push(fiveDaysData.arr[i].main.pressure);
+   pressureArr.push(fiveDaysData.arr[i].main.pressure*0.75);
   }
   console.log('Массив темп',tempArr);
   console.log(' темп',pressureArr);
@@ -92,7 +92,7 @@ function Graph({ fiveDaysData }){
       labels,
       datasets: [
         {
-          label: 'Температура',
+          label: `Температура C`,
           data: tempArr,
           backgroundColor: 'rgba(48, 132, 223, 0.9)',
         }      
@@ -103,7 +103,7 @@ function Graph({ fiveDaysData }){
       labels,
       datasets: [
         {
-          label: 'Влажность',
+          label: 'Влажность %',
           data: humidityArr,
           backgroundColor: 'rgba(48, 132, 223, 0.9)',
         }      
@@ -114,7 +114,7 @@ function Graph({ fiveDaysData }){
       labels,
       datasets: [
         {
-          label: 'Скорость ветра',
+          label: 'Скорость ветра м/c',
           data: windArr,
           backgroundColor: 'rgba(48, 132, 223, 0.9)',
         }      
@@ -125,7 +125,7 @@ function Graph({ fiveDaysData }){
       labels,
       datasets: [
         {
-          label: 'Давление',
+          label: 'Давление мм рт. ст.',
           data: pressureArr,
           backgroundColor: 'rgba(48, 132, 223, 0.9)',
         }      

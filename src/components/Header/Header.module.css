@@ -15,6 +15,7 @@
 }
 .title{
    font-size: 30px;
+  
 }
 .nav-list{
    display: flex;
@@ -33,3 +34,27 @@
 .link:active{
    color: inherit;
 }
+
+@media screen and (max-width: 992px) {
+   .title{
+      font-size: 20px;
+   }
+   .logo-img{
+      width: 70px;
+   }
+   .link{
+      font-size: 25px;
+   }
+}
+@media screen and (max-width: 768px) {
+   .link{
+      font-size: 20px;
+   }
+}
+@media screen and (max-width: 635px) {
+   .nav-list{
+      display: none;
+   }
+
+}
+
