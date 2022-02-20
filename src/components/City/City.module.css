@@ -17,7 +17,9 @@
    font-size: 13px;
    font-weight: 800;
    
-   
+}
+.select-country span{
+   background-color: rgb(80, 203, 228);
 }
 .card-wrapper{
    display: flex;

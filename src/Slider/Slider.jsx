@@ -57,7 +57,7 @@ function CitySlider({searchCountry, SetCityId}) {
        
         <Slider {...settings}>
           
-            {searchCountry.map(item =><div className='slider-carddd' key={item.id}><Link to="/weather"><BigCityWeather SetCityId={SetCityId} id={item.id}/></Link></div>)}
+            {searchCountry.map(item =><div className='slider-card' key={item.id}><Link to="/weather"><BigCityWeather SetCityId={SetCityId} id={item.id}/></Link></div>)}
             
         </Slider>
       </div>

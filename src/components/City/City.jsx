@@ -13,10 +13,9 @@ function City({cityId, SetCityId }) {
   
   let [country, SetCountry] = useState('UA') 
   
-   console.log(country)
   let searchCountry = []
    searchCountry = CityList.filter(item => item.country === country )  
-   console.log(searchCountry)
+   
   // массив для SELECT поиск по городам и странам
   const searchUkrainCity = []
   CityList.map(item => searchUkrainCity.push({value:item.id, label:item.name})) 
@@ -57,7 +56,6 @@ const colourStyles= {
      borderRadius: '10px',
      width: '200px',
      fontWeight: 800,
-        
     })
 }
   
@@ -78,17 +76,10 @@ const colourStyles= {
 
    <CitySlider searchCountry={searchCountry} SetCityId={SetCityId} />  
 
-
- {/* Блок вывода карточек больших городов */}
-      {/* <div className={s['card-wrapper']}> 
-        {searchCountry.map(item =><div key={item.id}><Link to="/weather"><BigCityWeather SetCityId={SetCityId} id={item.id}/></Link></div>)}
-      </div> */}
 {/* Поиск по всем возможным городам */}
       <div className={s['city-wrapper']}>
        <div className={s['select-wrapper']}>
-          <Select className={s['select-city']} placeholder={'Введите название города'} options={optionsCity} onChange={(e) => {SetCityId(e.value)
-          console.log(e)
-          } }/>
+          <Select className={s['select-city']} placeholder={'Введите название города'} options={optionsCity} onChange={(e) => SetCityId(e.value)}/>
           <Link className={s['search-icon']} to={'/weather'}><FcSearch size={'3rem'}/></Link>
         </div>
       </div>

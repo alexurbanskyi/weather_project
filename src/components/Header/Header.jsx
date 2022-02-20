@@ -14,7 +14,7 @@ const HEADER_LIST = [
 ]
 
 function Header({show, SetShow}){
-   // console.log('from header',show)
+   
    return(
       <div className={style.header}>
          <div className={style.logo}>

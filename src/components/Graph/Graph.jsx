@@ -9,15 +9,12 @@ import {
    Tooltip,
    Legend,
  } from 'chart.js';
- import { Bar } from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 import Loader from "../Loader/Loader";
-
-
 
 function Graph({ fiveDaysData }){
   if (Object.keys(fiveDaysData).length === 0 ) return  (<Loader/>)
-  console.log(fiveDaysData)
-   
+  
   let tempArr = []; 
   let humidityArr = [];
   let windArr = []; 
@@ -31,8 +28,6 @@ function Graph({ fiveDaysData }){
    windArr.push(fiveDaysData.arr[i].wind.speed)
    pressureArr.push(fiveDaysData.arr[i].main.pressure*0.75);
   }
-  console.log('Массив темп',tempArr);
-  console.log(' темп',pressureArr);
 
     ChartJS.register(
       CategoryScale,
@@ -131,30 +126,22 @@ function Graph({ fiveDaysData }){
         }      
       ],
     };
+
    return(
       <div className={s.graph} >
         <p className={s['city-name']}>{fiveDaysData.name}</p>
-
-      <div className={s["chart-container"]} >
-        <Bar className={s.qqq} options={optionsTemp} data={dataTemp} />
-      </div>
-      <div className={s["chart-container"]} >
-        <Bar className={s.qqq} options={optionsHumidity} data={dataHumidity} />;
-      </div>  
-      <div className={s["chart-container"]} >
-      <Bar options={optionsWind} data={dataWind} />;
-      </div>     
-
-      <div className={s["chart-container"]} >
-      <Bar options={optionsPressure} data={dataPressure} />;
-      </div>       
-     
-            
-     
-          
-      
-         
-         
+        <div className={s["chart-container"]} >
+          <Bar className={s.qqq} options={optionsTemp} data={dataTemp} />
+        </div>
+        <div className={s["chart-container"]} >
+          <Bar className={s.qqq} options={optionsHumidity} data={dataHumidity} />;
+        </div>  
+        <div className={s["chart-container"]} >
+          <Bar options={optionsWind} data={dataWind} />;
+        </div>     
+        <div className={s["chart-container"]} >
+          <Bar options={optionsPressure} data={dataPressure} />;
+        </div>       
       </div>
    );
 }

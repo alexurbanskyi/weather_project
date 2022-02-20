@@ -4,11 +4,10 @@ import ChangeColor from '../../utilits/ChangeColor'
 import Loader from '../Loader/Loader'
 
 function Forecast({fiveDaysData}) {
- if (Object.keys(fiveDaysData).length === 0 ) return  <Loader/>
-  console.log(fiveDaysData)
+ 
+  if (Object.keys(fiveDaysData).length === 0 ) return  <Loader/>
  let arrData = fiveDaysData.arr
- console.log(arrData)
-       
+    
   return (
     <div className={s['forecast-wrapper']}>
       <div className={s['city-name']}>{fiveDaysData.name}</div>
@@ -18,7 +17,6 @@ function Forecast({fiveDaysData}) {
       <div className={s.card} key={item.dt_txt}>
         <p className={s['forecast-date']}> {item.dt_txt.slice(0,10)} </p>
         <p className={s['forecast-time']}>{item.dt_txt.slice(10)} </p>
-        
         <div className={s['temp-wrapper']}>
           {<img className={s.icon} src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="logo" />}
           <p className={s.temp}><span style={{color: ChangeColor(item.main.temp) }}>{Math.round(item.main.temp)}</span>&deg;C</p>
