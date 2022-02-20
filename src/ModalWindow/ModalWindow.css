@@ -1,27 +1,35 @@
-/* .modal{
-   color: rgb(255, 255, 255);
-   display: none;
- }
- .active{
-   display: block;
-   height: 100vh;
-   background-color: gray;
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-     
- }
-  */
   .modal-show{
-     display: block;
-     background-color: rgba(149, 167, 225, 0.64);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(160, 182, 251, 0.64);
      position: absolute;
      height: 100vh;
      top: 0;
      left: 0;
      width: 100%;
+     
   }
   .modal-close{
      display: none;
+     position: absolute;
+        
   }
+  .link-block{
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     width: 100%;
+     padding: 0 10px;
+  }
+  .modal-link{
+     font-size: 40px;
+     background-color: rgb(21, 119, 221);
+     margin: 5px 0;
+     padding: 10px;
+     border-radius: 10px;
+    
+  }
+  .modal-link:hover{
+   background-color: rgb(17, 170, 243);
+  } 

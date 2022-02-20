@@ -72,7 +72,7 @@ const colourStyles= {
       <div className={s['country-wrapper']}>
         <Select  styles={colourStyles} className={s['select-country']} placeholder={'Украина'} options={optionsCountry} onChange={(e) => {
           SetCountry(e.value)
-          console.log(e.value)
+          
           } }/>
       </div>
 

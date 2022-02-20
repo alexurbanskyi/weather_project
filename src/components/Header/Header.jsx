@@ -3,16 +3,18 @@ import style from './Header.module.css'
 import './Header.css'
 import logo_icon from '../../img/logo.png'
 import { NavLink } from "react-router-dom";
+import Burger from "../Burger/Burger";
 
 const HEADER_LIST = [
-   {hashtag: '/', menuName: 'Города'},
+   {hashtag: '/', menuName: 'Поиск'},
    {hashtag: '/weather', menuName: 'Погода'},
    {hashtag: '/forecast', menuName: 'Прогноз'},
    {hashtag: '/graph', menuName: 'График'},
    
 ]
 
-function Header(){
+function Header({show, SetShow}){
+   // console.log('from header',show)
    return(
       <div className={style.header}>
          <div className={style.logo}>
@@ -26,6 +28,7 @@ function Header(){
               {HEADER_LIST.map(item => <li key={item.hashtag}><NavLink className={style.link} to={item.hashtag}>{item.menuName}</NavLink></li>)}
             </ul>
          </nav>
+         <Burger show={show} SetShow={SetShow}/>
       </div>
    );
 }
