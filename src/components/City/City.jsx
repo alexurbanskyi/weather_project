@@ -26,10 +26,6 @@ function City({cityId, SetCityId }) {
       label: "Украина",
     },
     {
-        value: 'RU',
-        label: "Россия",
-    },
-    {
         value: 'FR',
         label: "Франция",
     },
@@ -51,7 +47,7 @@ function City({cityId, SetCityId }) {
 const colourStyles= {
   control: (styles) => ({
      ...styles, 
-     backgroundColor: 'rgb(207, 229, 255)',
+     backgroundColor: 'rgb(128, 187, 250)',
      border: 'none',
      borderRadius: '10px',
      width: '200px',

@@ -4,6 +4,7 @@ import ChangeColor from '../../utilits/ChangeColor'
 import Loader from '../Loader/Loader'
 
 function BigCityWeather({id, SetCityId}){
+
    let [bigCityData, SetBigCityData] = useState({})
    
      useEffect(() => {
@@ -21,9 +22,10 @@ function BigCityWeather({id, SetCityId}){
          
         SetBigCityData(weatherData);
          })
+         return () => SetBigCityData({})
     },[id])
     
-    if (Object.keys(bigCityData).length === 0 ) return <Loader/> 
+     if (Object.keys(bigCityData).length === 0 ) return <Loader/> 
 
      return(
        

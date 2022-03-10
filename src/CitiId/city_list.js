@@ -44,35 +44,20 @@ const UkraineCity = [
         "name": "Die",
         "country": "FR",
     },
-    // {
-    //     "id": 3011460,
-    //     "name": "Killem",
-    //     "country": "FR",
-    // },
-    // {
-    //     "id": 3010631,
-    //     "name": "La Cambe",
-    //     "country": "FR",
-    // },
-    // {
-    //     "id": 3009763,
-    //     "name": "La Croix",
-    //     "country": "FR",
-    // },
-    // {
-    //     "id": 6422654,
-    //     "name": "Dubrovka",
-    //     "country": "RU",
-    // },
     {
-        "id": 857689,
-        "name": "Vnukovo",
-        "state": "",
-        "country": "RU",
-        "coord": {
-            "lon": 37.296108,
-            "lat": 55.611938
-        }
+        "id": 3011460,
+        "name": "Killem",
+        "country": "FR",
+    },
+    {
+        "id": 3010631,
+        "name": "La Cambe",
+        "country": "FR",
+    },
+    {
+        "id": 7536078,
+        "name": "Irkutsk",
+        "country": "FR",
     },
     {
         "id": 2905348,
@@ -80,14 +65,59 @@ const UkraineCity = [
         "country": "DE",
     },
     {
+        "id": 2804765,
+        "name": "Zentendorf",
+        "country": "DE",
+    },
+    {
+        "id": 2861804,
+        "name": "Nortorf",
+        "country": "DE",
+    },
+    {
+        "id": 2871380,
+        "name": "Michaelsberg",
+        "country": "DE",
+        
+    },
+    {
+        "id": 2887270,
+        "name": "Knapendorf",
+        "country": "DE",
+    }, {
+        "id": 2923448,
+        "name": "Gablenberg",
+        "country": "DE",
+    },
+    {
         "id": 2522713,
         "name": "Vittoria",
-        "state": "",
         "country": "IT",
-        "coord": {
-            "lon": 14.53318,
-            "lat": 36.953739
-        }
+    },
+    {
+        "id": 2522718,
+        "name": "Vita",
+        "country": "IT",
+    },
+    {
+        "id": 2522732,
+        "name": "Villarosa",
+        "country": "IT",
+    },
+    {
+        "id": 2522893,
+        "name": "Torretta",
+        "country": "IT",
+    },
+    {
+        "id": 2523066,
+        "name": "Solarino",
+        "country": "IT",
+    },
+    {
+        "id": 2523758,
+        "name": "Pizzoni",
+        "country": "IT",
     },
    
     
